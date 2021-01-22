@@ -6,198 +6,185 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="bootstrap-5.0.0-beta1-dist\css\bootstrap.css" rel="stylesheet">
 
-    <title>CardCO.</title>
+    <title>ATM Houston</title>
+    <style>
+      body
+        {
+          background-color: #599CAB;
+          background-image: url('Page-BgTexture.jpg');
+          background-repeat: repeat;
+          background-attachment: scroll;
+          background-position: top left;
+        }
+
+      .PageBackgroundGradient
+        {
+          background-image: url('Page-BgGradient.jpg');
+          background-repeat: repeat-x;
+          height: 225px;
+          position: absolute;
+          width: 100%;
+          left: 0;
+          top: 0;
+          z-index: -1;
+        }
+
+      .container{
+        background-color: rgba(225, 237, 240, 0.3);
+      }
+
+      a {
+        color: #52DFFF;
+        font-family: Tahoma, Arial, Helvetica, Sans-Serif;
+        text-decoration: underline;
+      }
+
+      a:hover{
+        color: #52DFFF;
+        text-decoration: none;
+      }
+
+      .card {
+        background-color: rgba(		0, 116, 147, 1);
+        color: #C5DDE2;
+        font-family: Tahoma, Arial, Helvetica, Sans-Serif;
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-variant: small-caps;
+        margin-top: 10px;
+
+      }
+
+      ul li{
+        list-style-image: url('BlockContentBullets.png');
+      }
+
+      .sidebar {
+        color: #AACDD4;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 30px;
+      }
+
+      .border {
+        border-color: #AACDD4!important;
+        border-radius: 1%;
+        margin: 3px;
+      }
+
+    </style>
   </head>
-
   <body>
-
-      <!-- nav -->
-      <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="disp display-5 text-light text-decoration-none" href="#">Card<span class="text-primary">CO.</span></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control form-control-sm me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-light me-2" type="submit">Search</button>
-            </form>
-            <button class="btn btn-primary my-2" type="link">login</button>
-          </div>
-        </div>
-      </nav>
-      <!--end nav-->
-
+  <div class="PageBackgroundGradient"></div>
     <div class="container">
+      <div class="row"><img src="header.jpg" alt="header"></div>
 
-      <!-- carousel -->
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
-          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
-          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img height: src="pexels-asya-cusima-3097297.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-md-block">
-              <h1 class="display-1">Online Banking</h1>
-              <button type="button" class="btn btn-primary">Learn More</button>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="pexels-ketut-subiyanto-4559978.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-md-block">
-              <h1 class="display-1">Online Banking</h1>
-              <button type="button" class="btn btn-primary">Learn More</button>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="pexels-obsahovka-obsahovka-3570238.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-md-block">
-              <h1 class="display-1">Online Banking</h1>
-              <button type="button" class="btn btn-primary">Learn More</button>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </a>
-      </div><!-- END carousel -->
-<div style="height:20px;"></div>
-      <!-- cards -->
-      <div class="row my-3">
-        <div class="col-sm my-2">
-          <div class="card h-100">
-            <div class="card-body">
-              <h3 class="text-primary text-center">DEBIT</h3>
-              <p class=" text-center py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm my-2">
-          <div class="card h-100">
-            <div class="card-body">
-              <h3 class="text-primary text-center">CREDIT</h3>
-              <p class="text-center py-3">Sed finibus rutrum dolor nec condimentum.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm my-2">
-          <div class="card h-100">
-            <div class="card-body">
-              <h3 class="text-primary text-center">LOANS</h3>
-              <p class="text-center py-3">Mauris dignissim sagittis nibh et ultrices.</p>
-            </div>
-          </div>
-        </div>
-      </div><!-- END cards -->
-<div style="height:20px;"></div>
-      <!--horizontal cards-->
       <div class="row">
-        <!-- horizontal card 1-->
-        <div class="col-sm-6 col-xs-12">
-          <div class="card mw-100 mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-lg-12  ">
-                <img src="pexels-mentatdgt-937541.jpg"  class="img-fluid" alt="...">
-              </div>
-              <div class="col-lg-12  ">
-                <div class="card-body">
-                  <h1 class="card-title display-6 text-primary">Travel Rewards</h1>
-                  <p class="card-text mt-1">Donec ut ligula ac lectus posuere lacinia eu in odio. Proin at ornare ipsum. Nulla at orci velit. Integer diam mauris, tempor ac blandit a, accumsan quis lacus. Interdum et malesuada fames ac ante ipsum.</p>
-                  <button type="button" class="btn btn-primary ">Read More</button>
-                </div>
-              </div>
-            </div>
+        <!--main content-->
+        <div class="col col-md-8 "><!--col 1-->
+          <div class="bg-light p-3">
+          <p style="font-size:14pt; font-weight:bold;">ATM Houston is open for business and has a good inventory of parts and supplies
+          </p>
+
+          <p>Your full Source ATM Company is Houston owned and based to provide free ATM placement, ATM sales, ATM service, processing of ATM machines for Hotels  retail, restaurants, nightclubs, convenience and grocery stores or other high traffic areas in the Houston metro area.  This includes from Huntsville to Galveston, Katy to Baytown, Cleveland to Sugarland, College Station and all points in between including Conroe, Spring, Kingwood, Sugarland, Clear Lake, Cypress, Waller, Montgomery and more.  We are experts in Hotel ATM's and know what is required.  All of our hotel locations and office buildings come with custom wood enclosures to match your decor and is custom made and not an off the shelf product.  This is the ATM Houston company standard practice and is not just limited to the hospitality industry.  We provide the latest technology from Hyosung, Genmega and Hantle ATM's along with the parts, supplies and service so you won't be stuck with an old and outdated ATM or have to wait for service if needed.  We can do this because of our volume purchasing power and ever expanding footprint in the industry.  ATM Houston has a diverse portfolio but our largest part is the hospitality industry.  Our clients include Hilton, Hampton Inn, Homewood Suites, Embassy Suites, Element, Holiday Inn, La Quinta, Comfort Suites and many more.  We know and provide exactly what you need and want.
+          </p>
+
+          <p>Whether you need Free full ATM service, want to purchase your own ATM or just need better processing and support, we are here to help.  To purchase a new ATM please visit our eCommerce website at ATM's America to see our full line of ATM's, parts, supplies and accessories.  We are direct importers of the same parts that come with the ATM, supplies that every ATM needs and accessories that are needed by our customers.  We have set up these supply chains for a few reasons. It's not that we can't get them domestically because we can but to offer them at lower prices anywhere in the US and to always have them in stock when we or any of our customers needs them.
+          </p>
+
+          <img src="NAC-Logo-2016.png" alt="National ATM Council">
+          <img src="HLAGH.jpg" alt="ATM Houston is a member of Hotel and Lodging Association of Greater Houston">
+          <a href="http://discovery.ariba.com/profile/AN01421381578"><img alt="View ATM's America profile on Ariba Discovery" src="badge_180x55.jpg" border="0"></a>
+          <p></p>
+          <p><a href="http://www.atmsamerica.com" style="color:#007994;">ATM's America</a></p>
+          <p><a href="http://www.atmaustin.com" style="color:#007994;">ATM Service Austin Texas</a></p>
+          <p><a href="http://www.atmsanantonio.com" style="color:#007994;">ATM Service San Antonio Texas</a></p>
+          <p><a href="http://www.atmdallas.com" style="color:#007994;">ATM Service Dallas Texas</a></p>
+          <p></p>
           </div>
-        </div> <!-- END horizontal card 1-->
-        <!-- horizontal card 2-->
-        <div class="col-sm-6 col-xs-12">
-          <div class="card mw-100 mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-lg-12  ">
-                <img src="pexels-the-lazy-artist-gallery-1260591.jpg"  class="img-fluid" alt="...">
-              </div>
-              <div class="col-lg-12  ">
-                <div class="card-body">
-                  <h1 class="card-title display-6 text-primary">Start Saving</h1>
-                  <p class="card-text mt-1">Donec ut ligula ac lectus posuere lacinia eu in odio. Proin at ornare ipsum. Nulla at orci velit. Integer diam mauris, tempor ac blandit a, accumsan quis lacus. Interdum et malesuada fames ac ante ipsum.</p>
-                  <button type="button" class="btn btn-primary ">Read More</button>
-                </div>
-              </div>
-            </div>
+
+        </div><!--col1-->
+
+
+        <!--main menu-->
+        <div class="col col-md-4"><!--col2-->
+          <div class="card"><div class="card-body border">
+            <p class="sidebar"> Main Menu </p>
+            <ul>
+              <li><a href=#>HOME</a></li>
+              <li><a href=#>ABOUT US</a></li>
+              <li><a href=#>ATM PRODUCTS</a></li>
+              <li><a href=#>ATM SERVICES</a></li>
+              <li><a href=#>ATM SALES</a></li>
+              <li><a href=#>ATM SOLUTIONS</a></li>
+              <li><a href=#>FAQ</a></li>
+              <li><a href=#>TESTIMONIALS</a></li>
+              <li><a href=#>ATM LEASING</a></li>
+              <li><a href=#>ATM ENCLOSURES</a></li>
+              <li><a href=#>EMPLOYMENT</a></li>
+              <li><a href=#>POB ATM</a></li>
+              <li><a href=#>ATM HOUSTON NEWS</a></li>
+              <li><a href=#>HOTELS WE SERVICE</a></li>
+            </ul>
+          </div></div><!--card-->
+
+          <!-- ON SALE-->
+          <div class="card"><div class="card-body border">
+            <p class="sidebar">ON SALE</p>
+            <p>
+            Beginning June 1, 2019 we will install a new Genmega G2500 with electronic lock and 1000 note removable cassette for the low price of $2,245.00*.  In additon to receiving this great price you will never have to pay for receipt paper, service calls or software updates and keep all of your surcharge.  This is a limited offer and may be withdrawn at any time without notice.  If internet is a problem at your location we can furnish you a 4G LTE router that is cnfigured to run  IP over cellular for $19.95 per month or a one time charge of $169.00 plus $4.95 per month for 5MB data.  You would literally have to perform thousands of transactions per month to use 5MB.
+            </p>
+
+            <img src="G2500_right.png"  class="img-fluid"  alt="ATM">
+
+            <p>*Plus sales tax and payment by check only.  Delivered and installed in Houston only.  Processing required.</p>
+          </div></div><!--card-->
+
+          <!--testimonials-->
+          <div class="card"><div class="card-body border">
+            <p class="sidebar"> Testimonials </p>
+            <p>
+            What a difference ATM Houston is to our business.  The last company would let the cash run out and then wait several days before they would refill it only to let it run out again after a couple of days.
+            </p>
+          </div></div><!--card-->
+          <!--sidebar image-->
+          <div class="card"><div class="card-body border">
+            <img src="product_inner_img3.jpg"  class="img-fluid mx-auto d-block"  alt="ATM">
+          </div></div><!--card-->
+
+
+
+          <!--footer 1-->
+          <div class="text-center m-3">
+            <p>ATM Houston
+            </br>PO Box 130021
+            </br>The Woodlands, TX 77393
+            </br>281-886-7989</p>
           </div>
-        </div> <!-- END horizontal card 2-->
-      </div><!--END horizontal card ROW-->
-
-
-
-
+        </div><!--col2-->
+      </div><!--row-->
+      <!--footer 2-->
+      <div class="card"><div class="card-body bg-dark text-end">
+      <p>Copyright © 2019 ATM Houston.</br>
+        All Rights Reserved.</p>
+      </div></div><!--card-->
     </div><!--container-->
-<div style="height:100px;"></div>
-<footer>
-  <div class="card text-white-50 bg-dark mw-100 my3 py3" style="width: 100%;">
-    <div class="card-body ">
-      <div class="row ">
-        <div class="col-sm-6 col-md-9">
-          <p class="display-5">CardCO.</p>
-          <p>PHONE: </br>123-456-7890</p>
-          <p>ADDRESS: </br>1234 Krusty Krab Dr. </br>Pacific Ocean, 23233 </p>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <p>ONLINE BANKING</p>
-          <p>DEBIT</p>
-          <p>CREDIT</p>
-          <p>LOANS</p>
-        </div>
-      </div>
-      <div class="row">
-        <p class="text-center pt-3">copyright 3030 © Krusty Krab</p>
-      </div>
-    </div>
-  </div>
-</footer>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+
+
+
+
+
+
+
+
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    -->
+
+
   </body>
 </html>
