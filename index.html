@@ -10,6 +10,9 @@
 
     <title>ATM Houston</title>
     <style>
+
+
+
       body
         {
           background-color: #599CAB;
@@ -62,7 +65,7 @@
       }
 
       .sidebar {
-        color: #AACDD4;
+        color: #AACDD4!important;
         font-size: 20px;
         font-weight: bold;
         line-height: 30px;
@@ -72,6 +75,30 @@
         border-color: #AACDD4!important;
         border-radius: 1%;
         margin: 3px;
+      }
+
+      @media (min-width: 547px){
+            .navbar-collapse.collapse {
+              display: block!important;
+            }
+
+            .navbar-nav>li, .navbar-nav {
+              float: left !important;
+            }
+
+            .navbar-nav.navbar-right:last-child {
+              margin-right: -15px !important;
+            }
+
+            .navbar-right {
+              float: right!important;
+            }
+
+            #mainmenu {
+              display: none;
+            }
+          }
+
       }
 
     </style>
@@ -113,7 +140,16 @@
         <!--main menu-->
         <div class="col col-md-4 col-lg-3 "><!--col2-->
           <div class="card"><div class="card-body border">
-            <p class="sidebar"> Main Menu </p>
+
+
+            <nav class="navbar navbar-dark " >
+
+                <a class="navbar-brand sidebar" href="#">Main Menu</a>
+                <button class="navbar-toggler"  id="mainmenu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
             <ul>
               <li><a href=#>HOME</a></li>
               <li><a href=#>ABOUT US</a></li>
@@ -130,6 +166,7 @@
               <li><a href=#>ATM HOUSTON NEWS</a></li>
               <li><a href=#>HOTELS WE SERVICE</a></li>
             </ul>
+          </div></nav>
           </div></div><!--card-->
 
           <!-- ON SALE-->
@@ -173,14 +210,6 @@
         All Rights Reserved.</p>
       </div></div><!--card-->
     </div><!--container-->
-
-
-
-
-
-
-
-
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
