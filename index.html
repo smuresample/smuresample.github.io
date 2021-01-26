@@ -22,18 +22,6 @@
           background-position: top left;
         }
 
-      .PageBackgroundGradient
-        {
-          background-image: url('Page-BgGradient.jpg');
-          background-repeat: repeat-x;
-          height: 225px;
-          position: absolute;
-          width: 100%;
-          left: 0;
-          top: 0;
-          z-index: -1;
-        }
-
       .container{
         background-color: rgba(225, 237, 240, 0.3);
       }
@@ -42,10 +30,23 @@
         color: #52DFFF;
         font-family: Tahoma, Arial, Helvetica, Sans-Serif;
         text-decoration: underline;
+        font-size: 12px;
       }
 
-      a:hover{
-        color: #52DFFF;
+      .navbar, .navbar-nav .nav-link, .dropdown-menu {
+        font-family: Tahoma, Arial, Helvetica, Sans-Serif;
+        font-weight: bold;
+        line-height: 30px;
+        font-variant: small-caps;
+      }
+
+      a.dropdown-item{
+        color: #C5DDE2;
+        text-decoration: none;
+      }
+
+      a:hover.dropdown-item{
+        color: rgba(0, 116, 147, 1);
         text-decoration: none;
       }
 
@@ -60,15 +61,16 @@
 
       }
 
-      ul li{
-        list-style-image: url('BlockContentBullets.png');
-      }
-
       .sidebar {
         color: #AACDD4!important;
         font-size: 20px;
         font-weight: bold;
         line-height: 30px;
+        font-variant: small-caps;
+      }
+
+      .navbar, .dropdown-menu {
+        background: rgba(0, 116, 147, 1);
       }
 
       .border {
@@ -77,122 +79,117 @@
         margin: 3px;
       }
 
+      strong a:hover {
+        color:#C5DDE2;
+      }
+
       strong a {
         position: absolute;
         color: #ffffff;
         text-decoration: none;
-
       }
 
-      @media (min-width: 547px){
-            .navbar-collapse.collapse {
-              display: block!important;
-            }
-
-            .navbar-nav>li, .navbar-nav {
-              float: left !important;
-            }
-
-            .navbar-nav.navbar-right:last-child {
-              margin-right: -15px !important;
-            }
-
-            .navbar-right {
-              float: right!important;
-            }
-
-            #mainmenu {
-              display: none;
-            }
-          }
-
-
-          @media (max-width: 576px) {
-            strong a {
-            top: 16vw;
-            left: 14px;
-            font-size: 12px;
-            }
-          }
-
-        @media (min-width: 576px) {
+      @media (max-width: 576px) {
           strong a {
-            top: 97px;
-            left: 19px;
-            font-size: 15px;
+          top: 16vw;
+          left: 14px;
+          font-size: 12px;
           }
-        }
-
-
-        @media (min-width: 768px) {
-          strong a {
-            top:132px;
-            left: 29px;
-            font-size: 22px;
-          }
-        }
-
-
-        @media (min-width: 992px) {
-          strong a {
-            top: 173px;
-            left: 29px;
-          }
-        }
-
       }
+
+      @media (min-width: 576px) {
+        strong a {
+          top: 97px;
+          left: 19px;
+          font-size: 15px;
+        }
+      }
+
+
+      @media (min-width: 768px) {
+        strong a {
+          top:132px;
+          left: 29px;
+          font-size: 22px;
+        }
+      }
+
+
+      @media (min-width: 992px) {
+        strong a {
+          top: 173px;
+          left: 29px;
+        }
+      }
+
+    }
 
     </style>
   </head>
   <body>
   <div class="PageBackgroundGradient"></div>
-    <div class="container" >
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-dark" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Main Menu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav" >
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              SERVICES
+            </a>
+            <ul class="dropdown-menu border" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">ATM PRODUCTS</a></li>
+              <li><a class="dropdown-item" href="#">ATM SERVICES</a></li>
+              <li><a class="dropdown-item" href="#">ATM SALES</a></li>
+              <li><a class="dropdown-item" href="#">ATM SOLUTIONS</a></li>
+              <li><a class="dropdown-item" href="#">ATM LEASING</a></li>
+              <li><a class="dropdown-item" href="#">ATM ENCLOSURES</a></li>
+              <li><a class="dropdown-item" href="#">ATM SOLUTIONS</a></li>
+            </ul>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">POB ATM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ATM HOUSTON NEWS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">HOTELS WE SERVICE</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              ABOUT US
+            </a>
+            <ul class="dropdown-menu border" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">EMPLOYMENT</a></li>
+              <li><a class="dropdown-item" href="#">TESTIMONIALS</a></li>
+              <li><a class="dropdown-item" href="#">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
 
       <div style="position:relative;">
-
-        <strong><a href="tel:800-519-980">800-519-9808</a></strong>
+        <strong><a class="phone" href="tel:800-519-980">800-519-9808</a></strong>
         <img class="img-fluid" src="header.jpg" alt="header">
-
-
       </div>
 
+
       <div class="row">
-
-        <!--main menu-->
-        <div class="col col-md-4 col-lg-3 "><!--col2-->
-          <div class="card"><div class="card-body border">
-
-
-            <nav class="navbar navbar-dark " >
-
-                <a class="navbar-brand sidebar" href="#">Main Menu</a>
-                <button class="navbar-toggler"  id="mainmenu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-
-            <ul>
-              <li><a href=#>HOME</a></li>
-              <li><a href=#>ABOUT US</a></li>
-              <li><a href=#>ATM PRODUCTS</a></li>
-              <li><a href=#>ATM SERVICES</a></li>
-              <li><a href=#>ATM SALES</a></li>
-              <li><a href=#>ATM SOLUTIONS</a></li>
-              <li><a href=#>FAQ</a></li>
-              <li><a href=#>TESTIMONIALS</a></li>
-              <li><a href=#>ATM LEASING</a></li>
-              <li><a href=#>ATM ENCLOSURES</a></li>
-              <li><a href=#>EMPLOYMENT</a></li>
-              <li><a href=#>POB ATM</a></li>
-              <li><a href=#>ATM HOUSTON NEWS</a></li>
-              <li><a href=#>HOTELS WE SERVICE</a></li>
-            </ul>
-          </div></nav>
-          </div></div><!--card-->
-
-        </div><!--col2-->
-
-
         <!--main content-->
         <div class="col col-md-8 col-lg-9"><!--col 1-->
           <div class="bg-light p-3">
@@ -216,9 +213,14 @@
           <p><a href="http://www.atmdallas.com" style="color:#007994;">ATM Service Dallas Texas</a></p>
           <p></p>
         </div>
-
-
           </div>
+
+        </div><!--col1-->
+
+
+        <!--main menu-->
+        <div class="col col-md-4 col-lg-3 "><!--col2-->
+
           <!-- ON SALE-->
           <div class="card"><div class="card-body border">
             <p class="sidebar">ON SALE</p>
@@ -242,27 +244,23 @@
           <div class="card"><div class="card-body border">
             <img src="product_inner_img3.jpg"  class="img-fluid mx-auto d-block"  alt="ATM">
           </div></div><!--card-->
-        </div><!--col1-->
 
 
 
-      </div><!--row-->
-      <!--footer 2-->
-      <div class="card"><div class="card-body bg-dark ">
-        <div class="row">
-          <div class="col">
+          <!--footer 1-->
+          <div class="text-center m-3">
             <p>ATM Houston
             </br>PO Box 130021
             </br>The Woodlands, TX 77393
             </br>281-886-7989</p>
           </div>
-          <div class="col">
-            <p class="text-end">Copyright © 2019 ATM Houston.</br>
-            All Rights Reserved.</p>
-          </div>
-        </div>
+        </div><!--col2-->
+      </div><!--row-->
+      <!--footer 2-->
+      <div class="card"><div class="card-body bg-dark text-end">
+      <p>Copyright © 2019 ATM Houston.</br>
+        All Rights Reserved.</p>
       </div></div><!--card-->
-
     </div><!--container-->
 
 
